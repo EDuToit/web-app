@@ -1,14 +1,15 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
+import {RouterModule} from '@angular/router';
 
-import { AppComponent } from './components/app/app.component';
-import { NavMenuComponent } from './components/navmenu/navmenu.component';
-import { HomeComponent } from './components/home/home.component';
-import { ControlsComponent } from './components/controls/controls.component';
-import { MapperComponent } from './components/mapper/mapper.component';
+import {ApiDemoComponent} from './components/demoapi/apidemo.component';
+import {AppComponent} from './components/app/app.component';
+import {NavMenuComponent} from './components/navmenu/navmenu.component';
+import {HomeComponent} from './components/home/home.component';
+import {ControlsComponent} from './components/controls/controls.component';
+import {MapperComponent} from './components/mapper/mapper.component';
 
 @NgModule({
     declarations: [
@@ -16,18 +17,21 @@ import { MapperComponent } from './components/mapper/mapper.component';
         NavMenuComponent,
         HomeComponent,
         ControlsComponent,
-        MapperComponent
+        MapperComponent, 
+        ApiDemoComponent
     ],
     imports: [
         CommonModule,
         HttpModule,
         FormsModule,
         RouterModule.forRoot([
-            { path: '', redirectTo: 'home', pathMatch: 'full' },
-            { path: 'home', component: HomeComponent },
-            { path: '**', redirectTo: 'home' }
+            {path: '', redirectTo: 'home', pathMatch: 'full'},
+            {path: 'home', component: HomeComponent},
+            {path: '**', redirectTo: 'home'}
         ])
-    ]
+    ],
+    providers: [],
+    bootstrap: []
 })
 export class AppModuleShared {
 }
