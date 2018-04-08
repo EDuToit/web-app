@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using GeoJSON.Net.Contrib.Wkb;
-using GeoJSON.Net.Geometry;
-using Mapper_Api.Context;
 using Mapper_Api.Models;
 using Mapper_Api.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ViewFeatures.Internal;
 using Microsoft.EntityFrameworkCore;
 
 namespace Mapper_Api.Controllers
