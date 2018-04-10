@@ -6,7 +6,7 @@ using GeoJSON.Net.Geometry;
 
 namespace Mapper_Api.Models
 {
-    public class CoursePolygon
+    public class CoursePolygon : CourseElement
     {
         public enum PolygonTypes
         {
